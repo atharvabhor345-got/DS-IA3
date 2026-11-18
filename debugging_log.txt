@@ -1,0 +1,33 @@
+# Debugging Log – Student Marks Hash Table
+
+**Commit 1: Create initial hash table program structure**
+
+Created the initial C++ program for the Student Marks Hash Table assignment. Added the required header files, namespace declaration, table size of 29, and dataset size of 20. Created the main function and verified that the basic program compiled and executed successfully.
+
+**Commit 2: Generate personalized student marks dataset**
+
+Implemented the personalized dataset generation using the formula `v[i] = (S + 13*i) % 100`, where the seed value S is 159, obtained from the last four digits of my PRN. Compiled and executed the program to verify that all 20 values (`59, 72, 85, 98, 11, 24, 37, 50, 63, 76, 89, 2, 15, 28, 41, 54, 67, 80, 93, 6`) were generated correctly.
+
+**Commit 3: Implement division method hash function**
+
+Added the division method hash function using `key % TABLE_SIZE`. Even though my PRN (`202501100159`) is odd, the division method was kept consistent with the table structure for this implementation. Verified that the function compiled successfully.
+
+**Commit 4: Add basic insertion without collision handling**
+
+Initially implemented insertion by directly placing each key at its calculated home index. During execution, I observed that multiple keys could have the same home index. For example, keys 89 and 2 both mapped to index 2 (`89 % 29 = 2` and `2 % 29 = 2`), causing the later key to overwrite the earlier one. Similar overwriting occurred for other keys like 59 and 88, or 11 and 98 (`98 % 29 = 11`). This approach resulted in data loss, so it was rejected.
+
+**Commit 5: Resolve hash collisions using linear probing**
+
+Corrected the insertion function by implementing linear probing. When a calculated index was already occupied, the program checked the next index until an empty position was found. Used modulo table size to handle wrap-around. Tested the program and confirmed that colliding keys such as 89 and 2 were stored at different indices (indices 2 and 3) without overwriting existing values.
+
+**Commit 6: Display final hash table and verify personalized dataset**
+
+Added the final hash table display to show every index and its corresponding value or EMPTY status. Compiled and executed the completed program successfully. Verified the insertion trace and final table against the expected results. All 20 personalized values were stored correctly using the division method and linear probing.
+
+**Commit 7: Changed comments**
+
+Reviewed and improved the comments in the C++ source code to make the program easier to understand. Kept the hashing and insertion logic unchanged and verified that the program continued to compile and execute correctly.
+
+**Commit 8: Add debugging log, trace match report and Git log**
+
+Added the assignment documentation files, including the debugging log and Trace-Match Report, along with the Git history export. These files provide evidence of the development process, collision-handling correction and final program verification.
