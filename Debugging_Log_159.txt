@@ -1,0 +1,33 @@
+# Debugging Log – Cold-Drink Flavours Hash Table
+
+**Commit 1: Create initial cold-drink hash table program structure**
+
+Created the initial C++ program for the Cold-Drink Flavours Hash Table assignment. Added the required header files, namespace declaration, the `Flavour` structure to store each flavour code and name, and the `HashTable` class. Set the hash table size to 37 and prepared the main function. Compiled and executed the basic program to verify that the initial structure worked correctly.
+
+**Commit 2: Generate personalized cold-drink flavour dataset**
+
+Implemented the personalized dataset generation using the formula `v[i] = (S + 13*i) % 100`, where the seed value `S` is 159, obtained from the last four digits of the PRN. Added 20 cold-drink flavour names: Cola, Orange, Lemon-Lime, Root Beer, Mango, Grape, Pineapple, Strawberry, Cherry, Peach, Watermelon, Lychee, Green Apple, Blueberry, Guava, Raspberry, Coconut, Ginger Ale, Kiwi and Vanilla. Verified that the generated codes were `59, 72, 85, 98, 11, 24, 37, 50, 63, 76, 89, 2, 15, 28, 41, 54, 67, 80, 93, 6`.
+
+**Commit 3: Implement mid-square hash function**
+
+Implemented the mid-square hashing method as required for the personalized assignment. The program squares each key, extracts the middle two digits using `(sq / 10) % 100`, and then applies modulo 37 to obtain the table index. Tested the function with the generated flavour codes and verified that valid hash table indices were produced.
+
+**Commit 4: Add flavour insertion and duplicate key checking**
+
+Implemented the insertion function to place each flavour in the bucket calculated by the mid-square hash function. Added a duplicate-key check so that an existing flavour code is not inserted again. During testing, multiple flavour codes were found to map to the same bucket. Directly storing only one value at an index would not preserve all the flavours, so a collision-handling method was required.
+
+**Commit 5: Handle hash collisions using separate chaining**
+
+Implemented separate chaining using a vector of linked lists. Each hash table index stores a list of flavours, allowing multiple flavour codes to be stored in the same bucket without overwriting existing entries. Tested buckets with collisions. For example, codes 85, 63 and 15 map to index 22, while codes 76, 80 and 6 map to index 3. All colliding flavours are retained in their respective chains.
+
+**Commit 6: Display final hash table and verify cold-drink dataset**
+
+Added functions to display the chains in the non-empty buckets and to print the insertion trace. Verified the calculated indices and the final chains for all 20 flavour codes. The completed program also reports the collision count and load factor. The expected non-empty collision chains include index 11 (`59 -> 67`), index 18 (`72 -> 89`), index 22 (`85 -> 63 -> 15`) and index 3 (`76 -> 80 -> 6`).
+
+**Commit 7: Add search functionality and improve comments**
+
+Added the search function to find a flavour using its code by checking the corresponding bucket's chain. Included sample searches for codes 80, 6 and 99, and displayed the flavour name when a code is found or `not found` otherwise. Reviewed the comments to make the hashing, insertion, collision handling and search operations easier to understand. Verified that the program compiled and executed successfully.
+
+**Commit 8: Add debugging log, trace report and Git log**
+
+Prepared the assignment documentation files, including the debugging log, Trace-Match Report and Git log. These documents describe the development stages, personalized dataset, mid-square hashing method, separate chaining implementation and final program verification.

@@ -1,0 +1,96 @@
+commit [illustrative-commit-id-8]
+Author:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+AuthorDate: 2026-11-15 17:18:10 +0530
+Commit:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+CommitDate: 2026-11-15 17:18:10 +0530
+
+    Add debugging log, trace report and git log for cold-drink dataset
+
+    Debugging_Log.txt       |  25 ++++++++++++
+    Git_Log.txt             |  00 +++++++++++++
+    Trace_Match_Report.txt  | 106 ++++++++++++++++++++++++++++++++++++++++++++++
+    3 files changed, 131 insertions(+)
+
+
+commit [illustrative-commit-id-7]
+Author:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+AuthorDate: 2026-11-15 17:15:30 +0530
+Commit:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+CommitDate: 2026-11-15 17:15:30 +0530
+
+    Improve comments and explain hash table operations
+
+    Cold_Drink_Dataset.cpp |  18 ++++++++++++------
+    1 file changed, 12 insertions(+), 6 deletions(-)
+
+
+commit [illustrative-commit-id-6]
+Author:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+AuthorDate: 2026-11-15 17:05:44 +0530
+Commit:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+CommitDate: 2026-11-15 17:05:44 +0530
+
+    Display final hash table and verify cold-drink flavour dataset
+
+    Cold_Drink_Dataset.cpp |  19 ++++++++++++++++++-
+    1 file changed, 18 insertions(+), 1 deletion(-)
+
+
+commit [illustrative-commit-id-5]
+Author:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+AuthorDate: 2026-11-15 17:04:00 +0530
+Commit:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+CommitDate: 2026-11-15 17:04:00 +0530
+
+    Handle hash collisions using separate chaining
+
+    Cold_Drink_Dataset.cpp |  25 ++++++++++++++++++++-----
+    1 file changed, 20 insertions(+), 5 deletions(-)
+
+
+commit [illustrative-commit-id-4]
+Author:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+AuthorDate: 2026-11-15 17:01:55 +0530
+Commit:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+CommitDate: 2026-11-15 17:01:55 +0530
+
+    Implement flavour insertion and duplicate key checking
+
+    Cold_Drink_Dataset.cpp |  22 ++++++++++++++++++++++
+    1 file changed, 22 insertions(+)
+
+
+commit [illustrative-commit-id-3]
+Author:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+AuthorDate: 2026-11-15 16:59:40 +0530
+Commit:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+CommitDate: 2026-11-15 16:59:40 +0530
+
+    Implement mid-square hash function
+
+    Cold_Drink_Dataset.cpp |  6 ++++++
+    1 file changed, 6 insertions(+)
+
+
+commit [illustrative-commit-id-2]
+Author:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+AuthorDate: 2026-11-15 16:58:28 +0530
+Commit:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+CommitDate: 2026-11-15 16:58:28 +0530
+
+    Generate personalized cold-drink flavour dataset
+
+    Cold_Drink_Dataset.cpp |  19 +++++++++++++++++++
+    1 file changed, 19 insertions(+)
+
+
+commit [illustrative-commit-id-1]
+Author:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+AuthorDate: 2026-11-15 16:56:21 +0530
+Commit:     Atharva Arun Bhor <atharvabhor345@gmail.com>
+CommitDate: 2026-11-15 16:56:21 +0530
+
+    Create initial cold-drink hash table program structure
+
+    Cold_Drink_Dataset.cpp |  21 +++++++++++++++++++++
+    1 file changed, 21 insertions(+)
